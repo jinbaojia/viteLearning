@@ -6,8 +6,7 @@ console.log('🚀 ~ file: App.tsx ~ line 3 ~ styles', styles);
 function App() {
   return (
     <div className={styles.a_b}>
-      c
-      <Head></Head>a
+      c<Head></Head>a
     </div>
   );
 }
