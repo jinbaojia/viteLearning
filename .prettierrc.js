@@ -1,8 +1,9 @@
 module.exports = {
-     singleQuote: true,
-     htmlWhitespaceSensitivity: 'ignore',
-     printWidth: 400,
-     tabWidth: 2,
-     bracketSpacing: true,
-     jsxBracketSameLine: false,
+  singleQuote: true,
+  htmlWhitespaceSensitivity: 'ignore',
+  printWidth: 400,
+  tabWidth: 2,
+  bracketSpacing: true,
+  jsxBracketSameLine: false,
+  endOfLine: 'auto',
 };

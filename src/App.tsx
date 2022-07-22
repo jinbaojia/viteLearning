@@ -1,12 +1,21 @@
-import React from 'react';
 import styles from './App.module.scss';
 import Head from './Head';
-console.log('🚀 ~ file: App.tsx ~ line 3 ~ styles', styles);
+import worker_script from './worker';
+const myWorker = new Worker(worker_script);
 
 function App() {
+  myWorker.onmessage = (m) => {
+    console.log('msg from worker: ', m.data);
+  };
   return (
     <div className={styles.a_b}>
-      c<Head></Head>a
+      <button
+        onClick={() => {
+          myWorker.postMessage('im from main');
+        }}
+      >
+        sssssss
+      </button>
     </div>
   );
 }
