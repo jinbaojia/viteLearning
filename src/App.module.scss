@@ -1,12 +1,7 @@
-.App {
-  text-align: center;
-}
 .a {
   color: red;
+
   &_b {
-    color: blue;
-  }
-  &-c{
-    color: green;
+    margin: 0;
   }
 }
